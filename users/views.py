@@ -22,7 +22,6 @@ class SignUp(generics.GenericAPIView):
     serializer_class = RegisUserSerializer
 
 
-
     def post(self, request):
 
         data = request.data
@@ -41,9 +40,8 @@ class SignUp(generics.GenericAPIView):
 
 
 
+
 class SignIn(APIView):
-
-
 
     def post(self, request:Request):
         email = request.data.get("email",
