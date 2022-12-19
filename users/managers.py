@@ -32,16 +32,3 @@ class CustomUseManager(BaseUserManager):
             raise ValueError("Администратор не имеет разрешений!")
 
         return self.create_user(email=email, password=password, **extra_fields)
-
-
-
-
-
-
-
-
-
-
-
-
-
